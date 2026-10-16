@@ -1,0 +1,13 @@
+{
+  "units": "mm",
+  "solid_count": 31,
+  "all_solids_valid": true,
+  "volume_roundtrip_pass": true,
+  "size_mm": {
+    "x": 38.0,
+    "y": 38.0,
+    "z": 226.5
+  },
+  "step_bytes": 272096,
+  "scope": "Exterior concept assembly; no motor, battery, waterproofing, internal fittings or tooling validation."
+}
