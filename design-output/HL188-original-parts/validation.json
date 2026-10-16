@@ -1,0 +1,78 @@
+{
+  "source_sha256": "77d6e7a0df0449503f372243de88dd219b2b39f05b289de4c7c91d8d967ce96f",
+  "method": "Dependency-preserving separation of original STEP entities, no geometry translation or remodelling",
+  "units": "mm",
+  "soft_material": "All blue solids, as user confirmed",
+  "excluded": "Red bottom cap #344",
+  "files": {
+    "HL188_hard_handle_shell.step": {
+      "source_solid_entities": [
+        345
+      ],
+      "geometry_entities_verbatim": 10969,
+      "bytes": 922080,
+      "sha256": "cc5d9c9ca876b25d8ece6b6f2ebb8a9909e032ca9b94a9d752f9948df8b48022",
+      "reimport_checks": [
+        {
+          "source_solid": 2,
+          "valid": true,
+          "relative_volume_delta": 0.0,
+          "bbox_delta_mm": 0.0
+        }
+      ]
+    },
+    "HL188_soft_overmold_all_blue.step": {
+      "source_solid_entities": [
+        346,
+        347
+      ],
+      "geometry_entities_verbatim": 194832,
+      "bytes": 17166633,
+      "sha256": "7ed9ce1cf000b2679bb1d78388350635faed06bc1c2fbd48e6a8feab7fc6c608",
+      "reimport_checks": [
+        {
+          "source_solid": 3,
+          "valid": true,
+          "relative_volume_delta": 0.0,
+          "bbox_delta_mm": 0.0
+        },
+        {
+          "source_solid": 4,
+          "valid": true,
+          "relative_volume_delta": 0.0,
+          "bbox_delta_mm": 0.0
+        }
+      ]
+    },
+    "HL188_hard_and_soft_assembly.step": {
+      "source_solid_entities": [
+        345,
+        346,
+        347
+      ],
+      "geometry_entities_verbatim": 205801,
+      "bytes": 18086678,
+      "sha256": "af2210548441570e33017936458ec647b0fd369a64087f4e5514b92bb4359a6a",
+      "reimport_checks": [
+        {
+          "source_solid": 2,
+          "valid": true,
+          "relative_volume_delta": 0.0,
+          "bbox_delta_mm": 0.0
+        },
+        {
+          "source_solid": 3,
+          "valid": true,
+          "relative_volume_delta": 0.0,
+          "bbox_delta_mm": 0.0
+        },
+        {
+          "source_solid": 4,
+          "valid": true,
+          "relative_volume_delta": 0.0,
+          "bbox_delta_mm": 0.0
+        }
+      ]
+    }
+  }
+}
