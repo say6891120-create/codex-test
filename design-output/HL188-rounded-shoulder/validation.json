@@ -1,0 +1,125 @@
+{
+  "units": "mm",
+  "base_model": "HL-188-26.10.14\u534a\u622a.stp",
+  "modified_region_z_mm": [
+    139.0,
+    147
+  ],
+  "soft_shoulder_top_z_mm": 144.5,
+  "soft_top_outer_radius_mm": 7.8,
+  "shoulder_height_mm": 5.5,
+  "hard_collar_top_z_mm": 147,
+  "original_connector_retained": true,
+  "checks": {
+    "hard": {
+      "lower_body_volume_delta_mm3": 0.03015356048308604,
+      "lower_volume_numeric_relative_tolerance": 1e-05,
+      "valid": true,
+      "solids": 1
+    },
+    "soft": {
+      "lower_body_volume_delta_mm3": 0.004543720041510824,
+      "lower_volume_numeric_relative_tolerance": 1e-05,
+      "valid": true,
+      "solids": 1
+    }
+  },
+  "modified_shoulder_interference_volume_mm3": 0.0,
+  "notes": [
+    "Image-based rounded-shoulder interpretation; dimensions of new crown are design assumptions",
+    "Original geometry below z139, original soft button and original connector retained",
+    "Not a production or mold release; local wall thickness, draft, sealing and mold feasibility require review"
+  ],
+  "STEP_reimport_checks": {
+    "HL188_rounded_hard_shell.step": {
+      "solids": 1,
+      "bytes": 1883724,
+      "sha256": "e91de63db982b749bc5eea5571ffb37c93da6c410e87cbf0afb491e86f6ac9a8",
+      "checks": [
+        {
+          "valid": true,
+          "relative_volume_delta": 0.0001467433008549494,
+          "bounding_box_delta_mm": 5.5706550483591855e-12,
+          "boundary_check_if_mass_delta_large": {
+            "samples": 635,
+            "max_bidirectional_sampled_boundary_distance_mm": 1.2080101625847324e-11,
+            "surface_sample_tolerance_mm": 1e-06
+          }
+        }
+      ]
+    }
+  },
+  "lower_grip_section_checks": [
+    {
+      "z_mm": 97.3,
+      "wire_count": 1,
+      "max_section_area_numeric_delta_mm2": 3.989322010511387e-07,
+      "bidirectional_boundary_samples": 108,
+      "max_sampled_boundary_distance_mm": 0.002691314911972875,
+      "boundary_distance_tolerance_mm": 0.01
+    },
+    {
+      "z_mm": 113.3,
+      "wire_count": 2,
+      "max_section_area_numeric_delta_mm2": 0.0002858466256157044,
+      "bidirectional_boundary_samples": 72,
+      "max_sampled_boundary_distance_mm": 2.4176803872778727e-05,
+      "boundary_distance_tolerance_mm": 0.01
+    },
+    {
+      "z_mm": 131.3,
+      "wire_count": 2,
+      "max_section_area_numeric_delta_mm2": 0.009200246687157687,
+      "bidirectional_boundary_samples": 2304,
+      "max_sampled_boundary_distance_mm": 0.008956602131880527,
+      "boundary_distance_tolerance_mm": 0.01
+    },
+    {
+      "z_mm": 138.5,
+      "wire_count": 2,
+      "max_section_area_numeric_delta_mm2": 0.0056827454983476855,
+      "bidirectional_boundary_samples": 72,
+      "max_sampled_boundary_distance_mm": 3.829434921452128e-08,
+      "boundary_distance_tolerance_mm": 0.01
+    }
+  ],
+  "exported_soft_shoulder_boolean_geometry_comparison": {
+    "missing_volume_mm3": 0.0,
+    "added_volume_mm3": 0.0
+  },
+  "soft_mass_diagnostic": {
+    "built_default_volume_mm3": 5419.868222634748,
+    "STEP_default_volume_mm3": 5452.84175577538,
+    "relative_difference": 0.006083825618291969,
+    "status": "Default mass integrals differ. Modified shoulder geometric symmetric difference is zero; original lower-grip cross-sections verified separately. Do not use the default mass integral as a validated mass prediction."
+  },
+  "final_file_checks": {
+    "HL188_rounded_hard_shell.step": {
+      "valid_solids": 1,
+      "bytes": 1883724,
+      "sha256": "e91de63db982b749bc5eea5571ffb37c93da6c410e87cbf0afb491e86f6ac9a8",
+      "volumes_from_STEP_mm3": [
+        12998.299244038744
+      ]
+    },
+    "HL188_rounded_soft_overmold.step": {
+      "valid_solids": 2,
+      "bytes": 33766965,
+      "sha256": "dbf6be55c62e78838e359776f443016a58a35be58258835e3c2392ecb96cc20a",
+      "volumes_from_STEP_mm3": [
+        286.7903396146882,
+        5452.84175577538
+      ]
+    },
+    "HL188_rounded_hard_soft_assembly.step": {
+      "valid_solids": 3,
+      "bytes": 35723435,
+      "sha256": "a4f59818c81252d7667aec7f3c9c74fb1fa428ae306ddc2c6011904fb8a134d6",
+      "volumes_from_STEP_mm3": [
+        286.7903396146882,
+        5452.84175577538,
+        12998.299244038744
+      ]
+    }
+  }
+}
